@@ -1,6 +1,22 @@
 Custom checkboxes for Objective-C
 =========================
 
+*** Addon:
+1) TNCheckBoxGroupView: use it for Interface Builder
+- User defined keys:
+single: BOOL - Single choice (Radio group type) or Multiple choices (Checkbox type)
+items: NSString - Item list, format: <item-id>@<item-label>@<checked:0 or 1>|<item-id>@<item-label>@<checked:0 or 1>|...
+- Delegate:
+TNCheckBoxGroupViewDelegate: - (void)TNCheckBoxGroupView:(id)view didChange:(NSArray*)selected;
+
+2) Access last interaction item:
+TNCheckBoxGroup.lastChangeItem
+
+3) Access checkbox from checkbox data:
+TNCheckBoxData.checkbox
+
+=========================
+
 U can use the TNCheckBoxGroup class to use some pre-built checkboxes, or you can extend it really easy to suit your own design.
 Every checkbox has a selected animation.  When the text is longer then the available space, it will automatically wrap the text over multiple lines.
 
