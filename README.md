@@ -1,7 +1,8 @@
-Custom checkboxes for Objective-C
+Custom checkboxes for Objective-C with addon features
 =========================
 
 *** Addon:
+
 1) TNCheckBoxGroupView: use it for Interface Builder
 - User defined keys:
 single: BOOL - Single choice (Radio group type) or Multiple choices (Checkbox type)
